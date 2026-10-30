@@ -1,0 +1,15 @@
+u = float(input())
+ 
+if u <= 50:
+    b = u
+elif u <= 150:
+    b = 50 + (u - 50) * 2
+elif u <= 250:
+    b = 250 + (u - 150) * 3
+else:
+    b = 550 + (u - 250) * 4
+
+if b > 150:
+    b *= 1.2
+
+print(int(b) if b.is_integer() else b)
