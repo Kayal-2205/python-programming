@@ -1,0 +1,13 @@
+s = input()
+alphacount = digitcount= 0
+for i in s:
+  if i.isalpha():
+    alphacount = True
+  elif i.isdigit():
+    digitcount = True
+  if alphacount and digitcount:
+    break;
+if alphacount and digitcount:
+  print("true")
+else:
+  print("false")
