@@ -1,0 +1,10 @@
+
+import math
+
+N = int(input())
+total = sum(math.factorial(int(digit)) for digit in str(N))
+
+if total == N:
+  print("Strong")
+else:
+  print("Not Strong")
