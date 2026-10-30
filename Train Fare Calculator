@@ -1,0 +1,8 @@
+a = int(input())
+d = int(input())
+f = d * 5
+if a < 12:
+  f *= 0.5
+elif a >=60:
+  f *=0.75
+print(int(f))
